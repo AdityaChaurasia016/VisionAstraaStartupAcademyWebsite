@@ -7,7 +7,7 @@ import HeroSection from './components/HeroSection';
 import Affiliations from './components/Affiliations';
 
 
-const App = () => {
+const App = () =>  {
   return (
     <div>
       <NavBarr/>
