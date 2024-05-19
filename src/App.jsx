@@ -5,7 +5,7 @@ import NavBarr from './components/NavBarr';
 import HeroSection from './components/HeroSection';
 import Affiliations from './components/Affiliations';
 
-import sky from './assets/skyy.jpg'
+
 import HeroSection2 from './components/HeroSection2';
 
 // bg-gradient-to-tr from-blue-700 via-purple-900  to-red-700
