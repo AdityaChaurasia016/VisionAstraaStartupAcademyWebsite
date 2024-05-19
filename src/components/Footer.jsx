@@ -5,8 +5,8 @@ import { PhoneCall , Mail} from 'lucide-react'
 const Footer = () => {
   return (
     <div>
-      <div className="flex w-[100vw] h-[10rem] py-6 px-[6rem] bg-[rgb(10,20,47)] text-white">
-        <div className="flex lg:flex-row sm:flex-col w-full">
+      <div className="flex w-[100vw] lg:h-[10rem] h-[20rem] py-6 px-[6rem] bg-[rgb(10,20,47)] text-white">
+        <div className="flex lg:flex-row flex-col w-full">
             <div className="left_section flex justify-between  flex-shrink-0 w-1/2 p-2 pr-12">
             <img src={VALogo1} className='w-[100px]' alt="" />
             <div className='flex justify-center items-center space-x-10 '>

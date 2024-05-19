@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/logocircle.png';
 import { navItems } from '../constants';
 import {useState} from 'react';
 import {Menu, X} from 'lucide-react';
@@ -17,9 +17,9 @@ const NavBarr = () => {
 
   return (
     <div>
-       <nav className="sticky top-0 z-50 py-2 backdrop-blur-lg border-b bg-gradient-to-bl px-6 from-blue-800  to-red-700 text-white ">
+       <nav className="sticky top-0 z-50 py-2 bg-gradient-to-bl px-6 bg-black text-white ">
        <div className="flex justify-between items-center mr-5">
-        <div className="mx-2 p-1 flex justify-between gap-2 items-center"> <img src={Logo} className='w-12' alt="" /> <p className='text-md tracking-tighter leading-tight lg:text-2xl '>VISION ASTRA STARTUP ACADEMY</p></div>
+        <div className="mx-2 p-1 flex justify-between gap-2 items-center"> <img src={Logo} className='w-12' alt="" /> <p className='text-md tracking-tighter leading-tight lg:text-2xl lg:font-ubuntu '>VISIONASTRAA STARTUP ACADEMY</p></div>
         <div className="hidden lg:flex items-center space-x-5 p-1 ">
           {navItems.map((item,index)=>(
             <div key={index} className='p-1'><a href={item.href}>{item.label}</a></div>
@@ -38,10 +38,6 @@ const NavBarr = () => {
                     </li>
                   ))}
                 </ul>
-                {/* <div className="flex space-x-6">
-                  <a href="#" className="py-2 px-3 border rounded-md" >Sign In</a>
-                  <a href="#" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800" >Create an account</a>
-                </div> */}
               </div>
             )}
        </nav>
