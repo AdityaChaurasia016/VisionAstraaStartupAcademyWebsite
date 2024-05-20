@@ -13,7 +13,7 @@ const App = () =>  {
   return (
     <div>
       <NavBarr/>
-      <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/blue5.jpg')] bg-cover ">
+      <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/blue5.jpg')] bg-cover">
         <HeroSection/>
         <HeroSection2/>
         <Affiliations/>
