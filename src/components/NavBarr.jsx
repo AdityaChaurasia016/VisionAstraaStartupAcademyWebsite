@@ -30,7 +30,7 @@ const NavBarr = () => {
         </div>
         </div>
         {mobileDrawerOpen && (
-              <div className="fixed top-[100px] right-[17%] z-20 bg-gradient-to-bl from-blue-800 to-red-700 p-12 flex flex-col justify-center items-center lg:hidden w-[70%] mx-auto">
+              <div className="fixed top-[100px] right-[17%] z-20 bg-[white]/10 backdrop-blur-xl rounded-xl overflow-hidden p-12 flex flex-col justify-center items-center lg:hidden w-[70%] mx-auto">
                 <ul>
                   {navItems.map((item, index) =>(
                     <li key={index} className="p-4 border text-center rounded-[1.1rem] my-4">
