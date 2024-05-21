@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from '../assets/logocircle.png';
 import { navItems } from '../constants';
-import {useState} from 'react';
-import {Menu, X} from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const NavBarr = () => {
@@ -34,7 +35,7 @@ const NavBarr = () => {
                 <ul>
                   {navItems.map((item, index) =>(
                     <li key={index} className="p-4 border text-center rounded-[1.1rem] my-4">
-                      <a href={item.href}>{item.label}</a>
+                      <Link to={item.href}>{item.label}</Link>
                     </li>
                   ))}
                 </ul>

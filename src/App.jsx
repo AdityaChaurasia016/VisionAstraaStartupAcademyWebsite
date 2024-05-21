@@ -1,23 +1,27 @@
 import React from 'react'
-import Logo from './assets/Logo.png'
+// import Logo from './assets/Logo.png'
 import Footer from './components/Footer';
 import NavBarr from './components/NavBarr';
-import HeroSection from './components/HeroSection';
-import Affiliations from './components/Affiliations';
+import Homepage from './Pages/Homepage';
+import Discoverus from './Pages/Discoverus';
 
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import HeroSection2 from './components/HeroSection2';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 // bg-gradient-to-tr from-blue-700 via-purple-900  to-red-700
 const App = () =>  {
   return (
     <div>
       <NavBarr/>
-      <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/blue5.jpg')] bg-cover">
-        <HeroSection/>
-        <HeroSection2/>
-        <Affiliations/>
-      </div>
+      {/* <RouterProvider router={router}/> */}
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="/discoverus" element={<Discoverus />}/>
+      </Routes>
+      </BrowserRouter>
       <Footer/> 
     </div>  
   )
