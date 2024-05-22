@@ -15,7 +15,6 @@ const App = () =>  {
   return (
     <div>
       <NavBarr/>
-      {/* <RouterProvider router={router}/> */}
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage/>}/>
