@@ -8,6 +8,7 @@ import Discoverus from './Pages/Discoverus';
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Contactus from './Pages/Contactus';
 
 
 // bg-gradient-to-tr from-blue-700 via-purple-900  to-red-700
@@ -19,6 +20,8 @@ const App = () =>  {
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path="/discoverus" element={<Discoverus />}/>
+        <Route path="/contactus" element={<Contactus />}/>
+        
       </Routes>
       </BrowserRouter>
       <Footer/> 
