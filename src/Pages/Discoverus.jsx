@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
 import HeroSection from '../components2/HeroSection';
+import dsbg1 from '../assets/dsbg1.jpg';
 
 const Discoverus = () => {
-  return (
-    <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/dsbg1.jpg')] bg-cover">   {/*This is the section for the editing of the Discover Us page, Add the components here (Make sure you store the components for this page specifically in the components2 folder)*/}
-      <HeroSection/>
-    </div>
-  )
+    return (
+        <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${dsbg1})` }}>
+            <div className="bg-black bg-opacity-50 min-h-screen">
+                <HeroSection />
+            </div>
+        </div>
+    );
 }
 
-export default Discoverus
+export default Discoverus;
