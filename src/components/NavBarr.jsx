@@ -18,9 +18,9 @@ const NavBarr = () => {
 
   return (
     <div>
-       <nav className="sticky top-0 z-50 py-2 bg-gradient-to-bl px-6 bg-black text-white ">
+       <nav className="sticky top-0 z-50 py-2  px-6 bg-black text-white ">
        <div className="flex justify-between items-center mr-5">
-        <div className="mx-2 p-1 flex justify-between gap-2 items-center"> <img src={Logo} className='w-12' alt="" /> <p className='text-md tracking-tighter leading-tight lg:text-2xl lg:font-ubuntu '>VISIONASTRAA STARTUP ACADEMY</p></div>
+        <div className="mx-2 p-1 flex justify-between gap-2 items-center"> <img src={Logo} className='w-12' alt="" /> <p className='text-md tracking-tighter leading-tight lg:text-3xl lg:font-ubuntu font-light '>VISIONASTRAA STARTUP ACADEMY</p></div>
         <div className="hidden lg:flex items-center space-x-5 p-1 ">
           {navItems.map((item,index)=>(
             <div key={index} className='p-1'><a href={item.href}>{item.label}</a></div>

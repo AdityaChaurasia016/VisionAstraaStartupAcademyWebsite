@@ -3,17 +3,22 @@ import React from 'react'
 import HeroSection from '../components/HeroSection';
 import HeroSection2 from '../components/HeroSection2';
 import Affiliations from '../components/Affiliations';
+import Intro from '../components/Intro';
+import Carousel from '../components/Carousel';
 
 
 const Homepage = () => {
 
   return (
     <div>
-      <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/blue5.jpg')] bg-cover">
+      <div className="max-w-full mx-auto pt-10 -gradient-to-tr from-blue-500 via-purple-600 to-purple-800  bg-[url('src/assets/newbg.jpg')] bg-cover">
         <HeroSection/>
-        <HeroSection2/>
-        <Affiliations/>
+      
+      <Intro/>
+      <HeroSection2/>
       </div>
+      <Carousel/>
+        <Affiliations/>
     </div>
   )
 }
