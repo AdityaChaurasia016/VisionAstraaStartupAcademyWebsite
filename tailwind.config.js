@@ -12,6 +12,14 @@ export default {
         inter:['Inter', 'sans-serif'],
         raleway:['Raleway', 'sans-serif']
       },
+      transitionDuration:{'1000':'1000ms'
+
+      },
+    },
+  },
+  variants: {
+    extend: {
+      transitionDuration: ['hover'],
     },
   },
   plugins: [],

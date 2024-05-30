@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import image1 from '../assets/Carouselimages/Image1.jpg'
-import image2 from '../assets/Carouselimages/Image2.jpg'
+// import image2 from '../assets/Carouselimages/Image2.jpg'
 import image3 from '../assets/Carouselimages/Image3.jpg'
 import image4 from '../assets/Carouselimages/Image4.jpg'
-import image5 from '../assets/Carouselimages/Image5.jpg'
+// import image5 from '../assets/Carouselimages/Image5.jpg'
 import image6 from '../assets/Carouselimages/Image6.jpg'
 import { motion } from 'framer-motion'
 import {RxDotFilled} from "react-icons/rx"
@@ -17,20 +17,21 @@ const Carousel = () => {
 
 
 
-  const slides=[image1,image2,image3,image4,image5,image6]
+  const slides=[image1,image3,image4]
     
 
   const [oldState,newState]=useState(0)
 
   const nextSlide=()=>{
-    if(oldState >=0 && oldState<5)
+    if(oldState >=0 && oldState<2)
       {
         newState(oldState+1)
       }
+      else return
   }
 
   const prevSlide=()=>{
-    if(oldState >=1)
+    if(oldState >0)
       {
         newState(oldState-1)
       }
