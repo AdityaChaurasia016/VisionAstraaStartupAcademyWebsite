@@ -43,7 +43,7 @@ const Carousel = () => {
     <div className='max-w-[1000px] h-[700px] m-auto py-16 px-4 relative border'>
       <div  className='w-full h-full rounded-2xl bg-cover durtation-500 flex justify-center items-center border '>
       <BsChevronCompactLeft className='w-[40px] h-[40px] relative left-12 hover:text-black cursor-pointer' onClick={prevSlide}/>
-        <img src={slides[oldState]} alt="" className='lg:w-auto lg:h-[90%] bg-cover shadow-lg rounded-lg'/>
+        <img src={slides[oldState]} alt="" className='lg:w-auto lg:h-[90%] bg-cover shadow-lg rounded-lg transition-[0.4s]'/>
       <BsChevronCompactRight className='w-[40px] h-[40px] relative right-12 hover:text-black cursor-pointer' onClick={nextSlide}/>
       </div>
     </div>

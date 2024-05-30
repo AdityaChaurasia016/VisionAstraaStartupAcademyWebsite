@@ -23,7 +23,7 @@ const Role = () => {
               <img className="rounded-2xl" src={roleImg} alt="about" />
             </div>
           </motion.div>
-           <motion.div 
+           <motion.div    
               whileInView={{opacity:1,x:0}}
               initial={{opacity:0, x:100}}
               transition={{duration:0.5}}  
