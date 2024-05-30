@@ -52,7 +52,7 @@ const HeroSection = () => {
                         transition={{duration:1, delay:1.2}}
                         src={profilePic} 
                         alt="" />
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

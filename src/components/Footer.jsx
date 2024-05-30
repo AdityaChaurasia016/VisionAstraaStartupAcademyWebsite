@@ -5,7 +5,7 @@ import { PhoneCall , Mail} from 'lucide-react'
 import { Copyright } from 'lucide-react';
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-black pb-2 pt-5 px-10 mt-6'>
+    <div className='flex flex-col bg-black pb-2 pt-5 px-10'>
       <div className='flex lg:flex-row flex-col p-2 lg:h-[5rem] lg:space-y-0 space-y-6 h-[15rem]'>
         <div className='flex lg:w-1/2 justify-between  lg:p-2'>
           <img src={Logo} className='w-[60px] h-[60px]' alt="" />
