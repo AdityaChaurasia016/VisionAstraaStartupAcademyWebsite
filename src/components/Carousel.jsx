@@ -50,19 +50,19 @@ const Carousel = () => {
 
   return (
     <div className="bg-gradient-to-tl from-[#cbd5e1] to-[#ccfbf1]">
-    <div className='max-w-[1000px] h-[700px] mx-auto py-16 px-4 relative'>
+    <div className='max-w-[1000px] lg:h-[700px]  border border-blue-800 mx-auto py-16 px-10 relative'>
       <motion.div
       initial={{opacity:0,y:-200, scale:0.5}}
        whileInView={{ y: 0, scale:1, opacity:1}}
        transition={{duration:2, delay:0.2 }}
-       className='w-full h-full rounded-2xl bg-cover flex justify-center items-center'>
-      <BsChevronCompactLeft className='w-[80px] h-[80px] relative left-[4rem] hover:text-black cursor-pointer' onClick={prevSlide}/>
+       className='w-full h-full rounded-2xl bg-cover flex justify-center items-center border'>
+      <BsChevronCompactLeft className='w-[80px] h-[80px] text-black relative lg:left-[4rem] left-[1rem] hover:text-black cursor-pointer' onClick={prevSlide}/>
         <img src={slides[oldState]} alt="" className='lg:w-auto lg:h-[90%] bg-cover shadow-lg rounded-lg '/>
-      <BsChevronCompactRight className='w-[80px] h-[80px] relative right-[4rem] hover:text-black cursor-pointer' onClick={nextSlide}/>
+      <BsChevronCompactRight className='lg:w-[80px] lg:h-[80px] text-black w-[40px] h-[40px] relative lg:right-[4rem] hover:text-black cursor-pointer' onClick={nextSlide}/>
       </motion.div>
-      <div className='flex relative top-[-1rem] justify-center '>
+      <div className='flex relative lg:top-[-1rem] justify-center '>
       {slides.map((slide,slideIndex)=>(
-        <div key={slideIndex} onClick={()=>goToSlide(slideIndex)} className='text-2xl cursor-pointer'>
+        <div key={slideIndex} onClick={()=>goToSlide(slideIndex)} className='lg:text-2xl text-xl cursor-pointer'>
            <RxDotFilled className=''/>
         </div>
       ))}

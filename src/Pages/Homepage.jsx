@@ -18,7 +18,7 @@ const Homepage = () => {
       <HeroSection2/>
       </div>
       <Carousel/>
-        <Affiliations/>
+        {/* <Affiliations/> */}
     </div>
   )
 }

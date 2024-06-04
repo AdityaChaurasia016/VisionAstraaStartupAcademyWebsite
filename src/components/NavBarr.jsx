@@ -23,7 +23,7 @@ const NavBarr = () => {
         <div className="mx-2 p-1 flex justify-between gap-2 items-center"> <img src={Logo} className='w-12' alt="" /> <p className='text-md tracking-tighter leading-tight lg:text-3xl lg:font-ubuntu font-light '>VISIONASTRAA STARTUP ACADEMY</p></div>
         <div className="hidden lg:flex items-center space-x-5 p-1 ">
           {navItems.map((item,index)=>(
-            <div key={index} className='p-1'><a href={item.href}>{item.label}</a></div>
+            <div key={index} className='p-1'><a href={item.href} className=' hover:bg-white hover:text-black transition duration-500 p-2'>{item.label}</a></div>
           ))}
         </div>
         <div className="lg:hidden md:flex flex-col justify-end">
@@ -35,7 +35,7 @@ const NavBarr = () => {
                 <ul>
                   {navItems.map((item, index) =>(
                     <li key={index} className="p-4 border text-center rounded-[1.1rem] my-4">
-                      <Link to={item.href}>{item.label}</Link>
+                      <a href={item.href}>{item.label}</a>
                     </li>
                   ))}
                 </ul>
