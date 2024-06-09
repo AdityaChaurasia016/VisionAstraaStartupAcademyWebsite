@@ -31,8 +31,8 @@ const Contactus = () => {
 
   return (
     <div>
-     <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/newbg2.jpg')] bg-cover">
-        <div className='lg:h-[20rem] h-[16rem] p-8 lg:p-12 text-white flex flex-col justify-center items-center'>
+     <div className="max-w-full mx-auto pt-10 bg-[url('src/assets/ContacBackground.jpg')] bg-cover">
+        <div className='lg:h-[16rem] h-[16rem] p-8 lg:p-12 text-white flex flex-col justify-center items-center'>
           <p className='lg:text-7xl text-4xl  uppercase'>Contact Us</p>
           <p className='tracking-wide text-center'>Our team of customer care ninjas are ready to hear from you.</p>
         </div>
