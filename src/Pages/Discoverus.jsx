@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../components2/HeroSection'
 import Role from '../components2/Role'
+import Testimonials from '../components2/Testimonials'
 
 
 const Discoverus = () => {
@@ -13,6 +14,7 @@ const Discoverus = () => {
         <div className='container mx-auto px-8'>
           <HeroSection /> 
           <Role />
+          <Testimonials/>
         </div>
     </div>
   )
