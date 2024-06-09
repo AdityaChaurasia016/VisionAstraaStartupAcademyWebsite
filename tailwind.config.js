@@ -10,7 +10,8 @@ export default {
         ubuntu:['Ubuntu', 'sans-serif'],
         poppins:['Poppins', 'sans-serif'],
         inter:['Inter', 'sans-serif'],
-        raleway:['Raleway', 'sans-serif']
+        raleway:['Raleway', 'sans-serif'],
+        Khula:['Khula', 'sans-serif']
       },
       transitionDuration:{'1000':'1000ms'
 
