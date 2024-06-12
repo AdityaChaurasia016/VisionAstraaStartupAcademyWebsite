@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import roleImg from "../assets/ds2.jpg"
+import roleImg from "../assets/ds3.jpg"
+
+
 
 const Role = () => {
   return (
@@ -20,7 +22,7 @@ const Role = () => {
             transition={{duration:0.5}} 
             className="w-full lg:w-1/2 lg:*:p-8">
             <div className="flex items-center justify-center">
-              <img className="rounded-2xl" src={roleImg} alt="about" />
+              <img className="rounded-2xl w-100 h-100" src={roleImg} alt="about" />
             </div>
           </motion.div>
            <motion.div    
@@ -47,7 +49,7 @@ const Role = () => {
             <motion.div 
             className="rounded-2xl border-4 border-neutral-800 p-4">
                 <p className='lg:text-3xl text-2xl text-purple-500'>
-                    It's not a race, unless it lasts decades!! Come prepared for a long roller coaster journey!!
+                    "It's not a race, unless it lasts decades!! Come prepared for a long roller coaster journey!!"
                 </p>
             </motion.div>
         </motion.div>
