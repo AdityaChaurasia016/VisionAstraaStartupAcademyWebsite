@@ -12,7 +12,7 @@ const Footer = () => {
           <div className='flex lg:space-x-8 space-x-4 lg:mr-[120px]'>
             <Facebook className='w-[40px] h-[40px]'/>
             <Instagram className='w-[40px] h-[40px]'/>
-            <Linkedin className='w-[40px] h-[40px]'/>
+            <a href="https://www.linkedin.com/company/visionastraa/"><Linkedin className='w-[40px] h-[40px]'/></a>
           </div>
         </div>
 

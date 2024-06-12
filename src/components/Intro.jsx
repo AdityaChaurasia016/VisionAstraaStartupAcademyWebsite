@@ -34,7 +34,7 @@ const Intro = () => {
                 strings={["OUR MISSION",]}
                 typeSpeed={150}
                 startDelay={2800}
-                backSpeed={0}   
+                backSpeed={0}
                 showCursor={false}
               />
                 </h1>

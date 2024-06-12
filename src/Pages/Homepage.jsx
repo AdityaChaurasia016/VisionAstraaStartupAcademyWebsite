@@ -6,7 +6,6 @@ import Affiliations from '../components/Affiliations';
 import Intro from '../components/Intro';
 import Carousel from '../components/Carousel';
 
-
 const Homepage = () => {
 
   return (
@@ -18,6 +17,7 @@ const Homepage = () => {
       <HeroSection2/>
       </div>
       <Carousel/>
+
         {/* <Affiliations/> */}
     </div>
   )
