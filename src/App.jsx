@@ -19,8 +19,8 @@ import ColabCMR from './Componentcollab/ColabCMR';
 const App = () =>  {
   return (
     <div>
-      <NavBarr/>
       <BrowserRouter>
+      <NavBarr/>
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path="/discoverus" element={<Discoverus />}/>
@@ -30,9 +30,12 @@ const App = () =>  {
         <Route path='/dayanandsagaruniversity' element={<ColabDayanandSagar/>}/>
         <Route path='/eastpointuniversity' element={<ColabEastPoint/>}/>
         <Route path='/cmruniversity' element={<ColabCMR/>}/>
+        <Route path='*' element={<div className='h-[80vh] w-full'> <div className='m-auto'><h1 className=' text-6xl text-black font-bold'>ERROR 404</h1></div></div>}/>
+
       </Routes>
-      </BrowserRouter>
       <Footer/> 
+      </BrowserRouter>
+      
     </div>  
   )
 }
