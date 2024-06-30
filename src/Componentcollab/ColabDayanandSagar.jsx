@@ -43,4 +43,4 @@ const ColabDayanandSagar = () => {
   )
 }
 
-export default ColabDayanandSagar
+export default ColabDayanandSagar;
